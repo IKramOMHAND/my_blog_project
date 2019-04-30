@@ -8,6 +8,7 @@ class CreateContactTable extends Migration
 {
     /**
      * Run the migrations.
+     * Les migrations sont  associées au générateur de schéma de Laravel pour créer facilement le schéma de base de données de l'application
      *
      * @return void
      */
@@ -18,9 +19,7 @@ class CreateContactTable extends Migration
             $table->string('contact_name');
             $table->string('contact_email');
             $table->string('contact_message');
-             $table->timestamp('contact_date')->default(DB::raw('CURRENT_TIMESTAMP'));
-
-           // $table->timestamps(); // Effacer de la migration de la table contact
+            $table->timestamp('contact_date')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

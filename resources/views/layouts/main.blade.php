@@ -25,7 +25,7 @@
     <div class="callout large primary">
       <div class="row column text-center">
         <h1>Mon merveilleux blog</h1>
-        <h2 class="subheader">♥Bienvenu Sur mon premier Blog♥  </h2>
+        <h2 class="subheader">♥Bienvenu Sur mon premier Blog♥ </h2>
       </div>
     </div>
     <!-- We can now combine rows and columns when there's only one column in that row -->

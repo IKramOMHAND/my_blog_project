@@ -8,12 +8,13 @@ class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
+     * Les migrations sont  associées au générateur de schéma de Laravel pour créer facilement le schéma de base de données de l'application
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {// Créer la base de données avec les attributs suivant. 
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
@@ -31,6 +32,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('users');// supprimer la tables users s'elle existe; 
     }
 }

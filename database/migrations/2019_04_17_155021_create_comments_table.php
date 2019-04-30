@@ -8,6 +8,7 @@ class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
+     * Les migrations sont  associées au générateur de schéma de Laravel pour créer facilement le schéma de base de données de l'application
      *
      * @return void
      */

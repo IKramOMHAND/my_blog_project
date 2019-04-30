@@ -10,21 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
-Route::get('/', function () {
-    return view('welcome');
-});*/
-// ajout demander pour aller sur le contreleur 
-//Lorsqu’un visiteur du blog arrive sur l’URL “/”, appelle la fonction index du contrôleur qui s’appelle HomeController.
 
-Route::get('/Home','HomeController@index'); // la fonction appelé ici s'appelle index 
-Route::get('/Articles', 'ArticlesController@article');
-Route::get('/Contacts', 'ContactsController@Contact');
-Route::post('/Contacts', 'ContactsController@enregisterC');
+Route::get('/Home','HomeController@index'); // La fonction appelé ici s'a
+Route::get('/Articles','ArticlesController@article');// 
+Route::get('/Contacts','ContactsController@Contact');
+Route::post('/Contacts','ContactsController@enregisterC');// POSTroute enregistrera la nouveau contact de blog dans la base de données.
 Route::get('/','HomeController@index'); 
 Route::get('/Articles/{id}','ArticlesController@articleUnique');
 Route::post('/Articles/comment/{id}','CommentController@enregisterComment');
-
-
-
-// 
+// POSTroute enregistrera le nouveau commentaire de blog dans la base de données.
+Route::get('/Comment/{id}','CommentController@enregisterComment');

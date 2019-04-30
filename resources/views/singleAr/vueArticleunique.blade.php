@@ -1,5 +1,5 @@
-@extends('layouts/main')
-@section('content')
+@extends('layouts/main')<!-- Permet d'étendre le modèle layouts/main  -->
+@section('content')<!-- Permet d'insérer nos propres éléments  dans la vue -->
 
 <div class="row medium-8 large-7 columns">
 <div class="blog-post">
@@ -31,9 +31,12 @@
                         </div>
                         <button type="submit" style ="text-align: center ; color: blue; " class="btn btn-secondary"> Soummettre </button>
 </form>
-<?php die('ici'); ?>
-@foreach( $coms as $com )
-<li> nom de commontaire: {{$com->comment_name}} </li>
-<p>{{$com->comment_content}}</p>
+<?php die('Votre Commenitaire: c est article est bien'); ?>  <!-- Bug !!-->
+@foreach($coms as $com)
+<li> Auteur: <a href=""> {{$com->comment_name}}</a></li> <!-- Boucle pour afficer les commentaire sur un seul article -->
+<p>Commentaire : {{$com->comment_content}}</p>
 @endforeach
 @endsection
+
+
+

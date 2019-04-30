@@ -1,4 +1,4 @@
-@extends('layouts/main')
+@extends('layouts/main')<!-- Permet d'étendre le modèle layouts/main  -->
 @section('content')
-<p>Votre message a été bien enregistré</p>
+<h1>Votre message a été bien enregistré</h1>
 @endsection 

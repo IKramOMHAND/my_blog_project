@@ -6,6 +6,12 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/*
+Laravel fournit une implémentation simple pour interagir avec la basse de données
+Chaque table de la base de données a un Modèle associé pour interagir avec la table concernée.
+La class du model User a pour objectif d'intéragir avec la table de  la base donnée . 
+*/
+
 class User extends Authenticatable
 {
     use Notifiable;

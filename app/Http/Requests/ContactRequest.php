@@ -4,6 +4,10 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/*
+Laravel propose différentes approches pour valider les données entrantes de votre application. Par défaut, la classe de contrôleur de base de Laravel utilise un ValidatesRequeststrait qui constitue une méthode pratique pour valider une requête HTTP entrante avec diverses règles de validation puissantes.
+*/
+
 class ContactRequest extends FormRequest
 {
     /**
@@ -13,8 +17,9 @@ class ContactRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return true;// Remettre à true pour autoriser l'envoi du formulaire Contact. 
     }
+
 
     /**
      * Get the validation rules that apply to the request.
@@ -25,14 +30,12 @@ class ContactRequest extends FormRequest
     {
         return [
 
-             'contact_name' => 'required|max:200',
-            'contact_email' => 'required|email',
-             'contact_message'=> 'required|max:700',
+            'contact_name' => 'required|max:20',//contact_name ne doit pas dépasser 20 lettres
+            'contact_email' => 'required|email',//contact_email, doit etre conforme au à la forme d'Email 
+            'contact_message'=> 'required|max:700',//contact_message ne doit pas dépasser 700 lettres
 
         
         ];
     }
 }
- /*$table->string('contact_name');
-            $table->string('contact_email');
-            $table->string('contact_message');
+ 
