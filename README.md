@@ -38,5 +38,5 @@ Afffiche tous les articles dans existant dans la base de donnée, il s'agit de d
 ## Menu article Unique : 
 Affiche un seul article avec la possibilité de laisser un commentaire au dessous de chaque article;
 ## Menu contatc: 
-Affiche un formulaire de contact pour que l'utilisateur puisse contacter l'administrateur du blog. 
+Affiche un formulaire de contact pour que l'utilisateur puisse contacter l'administrateur du blog. les messages de contact qui s'affichent sur la page, ont pour objectif de confirmer l'enregistrement des messages envoyés par les utilistaurs dans la base de donnée.
 
