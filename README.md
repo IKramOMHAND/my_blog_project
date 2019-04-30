@@ -1,10 +1,11 @@
 # my_blog_project: 
-Projet réalisé dans le cadre de module **Programmation web côté serveur**   
+Projet réalisé dans le cadre de module **Programmation web côté serveur**, grâce au framework Laravel php,  
+## présentation du framework Laravel php : 
+Laravel est un framework d'application Web qui adopte une achétécture **MVC**. grace à sa syntaxe simple;  il tente à rendre l'éxpérience de developpement  agréable et créative, en simplifiant les tâches courantes utilisées dans la majorité des projets Web. 
 # Installation: 
-##Pour installer le projet sur votre machine il faut suivre les étapes suivantes :
+## Pour installer le projet sur votre machine il faut suivre les étapes suivantes :
 * Télécharger le projet
 * Installer composer dans le projet
-* 
 * Copier le fichier .env.example dans .env
 * Créez un fichier database.sqlite dans le répertoire database du projet récuperé
      * Créez un fichier database.sqlite dans le répertoire database de l’application
@@ -19,10 +20,12 @@ Php artisan key:generate
 * Remplissez les seeders
 * Insttaler **Faker** Cpmmande : On Ubuntu 16.10
      * sudo apt-get install faker
-* Lancez le terminal pour tester l'application "sous Lunix": 
-Aller sur le terminial, s'dentifier en tant que Root 
-Déplacer le dossier my_blog_porject dans le respertoir : /var/www/html
-Aller sur le répétoire courant : 
+## Pour visualiser le blog : 
+### Sous Lunix:
+* Lancez le terminal
+* s'dentifier en tant que Root 
+* Déplacer le dossier my_blog_porject dans le respertoir : /var/www/html
+* Aller sur le répétoire courant : 
       * Taper la commande suivante : cd /var/www/html/my_blog_porject/
       * Taper la commande suivante : php artisan serve
       * Cliquer sur le lien pour visialiser le blog
